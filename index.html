@@ -1,0 +1,1663 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Conociéndonos | Sexualidad y Salud Integral</title>
+
+<style>
+
+/* ================= GENERAL ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#fff9fc;
+    color:#55434c;
+}
+
+/* ================= MENÚ ================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,249,252,.96);
+    backdrop-filter:blur(10px);
+    border-bottom:2px solid #f7d5e2;
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    padding:15px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.logo{
+    font-size:23px;
+    font-weight:bold;
+    color:#d45f8a;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    text-decoration:none;
+    color:#624d56;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#d65f89;
+}
+
+/* ================= INICIO ================= */
+
+.hero{
+    min-height:90vh;
+    max-width:1200px;
+    margin:auto;
+    padding:80px 30px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+}
+
+.hero-text{
+    max-width:700px;
+}
+
+.etiqueta{
+    display:inline-block;
+    background:#ffdce9;
+    color:#c85580;
+    padding:9px 17px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+h1{
+    font-size:clamp(45px,7vw,78px);
+    line-height:1;
+    margin:22px 0;
+    color:#594650;
+}
+
+h1 span{
+    color:#d86691;
+}
+
+.hero p{
+    font-size:19px;
+    line-height:1.7;
+    margin-bottom:30px;
+}
+
+.boton{
+    display:inline-block;
+    background:#d96b95;
+    color:white;
+    text-decoration:none;
+    padding:14px 25px;
+    border-radius:30px;
+    font-weight:bold;
+    border:none;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.boton:hover{
+    background:#c95682;
+    transform:translateY(-2px);
+}
+
+.arte{
+    width:350px;
+    height:350px;
+    border-radius:45% 55% 55% 45%;
+    background:#fff0a8;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:90px;
+    text-align:center;
+    box-shadow:0 20px 50px rgba(200,100,140,.15);
+}
+
+/* ================= SECCIONES ================= */
+
+section{
+    padding:90px 25px;
+}
+
+.contenedor{
+    max-width:1150px;
+    margin:auto;
+}
+
+.titulo{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.titulo h2{
+    font-size:43px;
+    color:#d25f87;
+    margin-bottom:10px;
+}
+
+.titulo p{
+    max-width:750px;
+    margin:auto;
+    font-size:17px;
+    line-height:1.6;
+}
+
+/* ================= TARJETAS PRINCIPALES ================= */
+
+.temas{
+    background:#fff0f5;
+}
+
+.tarjetas{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.tarjeta{
+    text-decoration:none;
+    color:#55434c;
+    padding:35px;
+    min-height:250px;
+    border-radius:30px;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.tarjeta:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(150,80,100,.15);
+}
+
+.tarjeta .emoji{
+    font-size:55px;
+}
+
+.tarjeta h3{
+    font-size:27px;
+    margin:15px 0 10px;
+}
+
+.rosa{
+    background:#ffdce9;
+}
+
+.amarillo{
+    background:#fff0a8;
+}
+
+.durazno{
+    background:#ffe0d0;
+}
+
+/* ================= INFORMACIÓN ================= */
+
+.rosa-seccion{
+    background:#fff0f5;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.info{
+    background:white;
+    border-radius:22px;
+    padding:25px;
+    border:1px solid #f3d5e1;
+    box-shadow:0 8px 25px rgba(120,70,90,.07);
+    transition:.25s;
+}
+
+.info:hover{
+    transform:translateY(-4px);
+}
+
+.info .icono{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.info h3{
+    color:#b9577d;
+    margin-bottom:8px;
+    font-size:21px;
+}
+
+.info p{
+    line-height:1.6;
+}
+
+/* ================= CATEGORÍAS ================= */
+
+.categoria{
+    margin:50px 0 20px;
+    color:#bd587d;
+    font-size:27px;
+}
+
+/* ================= VIDEOS ================= */
+
+.video{
+    margin-top:50px;
+    background:white;
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    border:2px dashed #efbdd0;
+}
+
+.video h3{
+    color:#c35b82;
+    margin-bottom:8px;
+    font-size:24px;
+}
+
+.video p{
+    line-height:1.6;
+}
+
+/* TARJETA DEL VIDEO */
+
+.video-card{
+    margin:25px auto 0;
+    max-width:750px;
+    border-radius:20px;
+    overflow:hidden;
+    background:#f8dce7;
+    box-shadow:0 10px 30px rgba(100,50,80,.12);
+}
+
+.video-card img{
+    width:100%;
+    display:block;
+    height:auto;
+}
+
+.video-card a{
+    display:inline-block;
+    margin:18px;
+    padding:14px 28px;
+    background:#d65f89;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.video-card a:hover{
+    background:#bd4d77;
+    transform:translateY(-2px);
+}
+
+/* ================= MITOS ================= */
+
+.mitos{
+    display:grid;
+    gap:18px;
+    max-width:850px;
+    margin:auto;
+}
+
+.mito{
+    background:#fff0a8;
+    border:none;
+    border-radius:20px;
+    padding:23px;
+    text-align:left;
+    font-size:16px;
+    cursor:pointer;
+    color:#55434c;
+}
+
+.mito strong{
+    color:#b24e75;
+}
+
+.respuesta{
+    display:none;
+    margin-top:12px;
+    padding-top:12px;
+    border-top:1px solid #e0c86d;
+    line-height:1.6;
+}
+
+.mito.abierto .respuesta{
+    display:block;
+}
+
+/* ================= FUENTES ================= */
+
+.fuentes{
+    background:#fff0f5;
+}
+
+.fuente{
+    background:white;
+    padding:22px;
+    border-radius:18px;
+    margin:12px 0;
+    line-height:1.6;
+}
+
+.fuente strong{
+    color:#b9577d;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    text-align:center;
+    padding:35px;
+    background:#ffdce9;
+    color:#754c5c;
+    line-height:1.8;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:850px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        justify-content:center;
+        gap:12px;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        padding-top:55px;
+    }
+
+    .arte{
+        width:260px;
+        height:260px;
+        font-size:65px;
+    }
+
+    .tarjetas,
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    h1{
+        font-size:48px;
+    }
+
+    .video-card a{
+        margin:15px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+                         MENÚ
+===================================================== -->
+
+<header>
+
+<nav>
+
+<div class="logo">
+🌸 Conociéndonos
+</div>
+
+<ul>
+
+<li>
+<a href="#inicio">Inicio</a>
+</li>
+
+<li>
+<a href="#sexualidad">Sexualidad</a>
+</li>
+
+<li>
+<a href="#salud">Salud integral</a>
+</li>
+
+<li>
+<a href="#anticonceptivos">Anticonceptivos</a>
+</li>
+
+<li>
+<a href="#mitos">Mitos</a>
+</li>
+
+<li>
+<a href="#fuentes">Fuentes</a>
+</li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+
+<!-- =====================================================
+                       INICIO
+===================================================== -->
+
+<section id="inicio">
+
+<div class="hero">
+
+<div class="hero-text">
+
+<span class="etiqueta">
+EDUCACIÓN • RESPETO • CUIDADO
+</span>
+
+<h1>
+
+Conociéndonos:
+
+<br>
+
+<span>
+Sexualidad y Salud Integral
+</span>
+
+</h1>
+
+<p>
+
+Un espacio educativo creado para aprender de manera
+clara, respetuosa y responsable sobre sexualidad,
+bienestar, salud integral y métodos anticonceptivos.
+
+</p>
+
+<a class="boton" href="#temas">
+
+Comenzar a explorar 🌸
+
+</a>
+
+</div>
+
+
+<div class="arte">
+
+🌸<br>
+💗🌼
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+                    TEMAS PRINCIPALES
+===================================================== -->
+
+<section class="temas" id="temas">
+
+<div class="contenedor">
+
+<div class="titulo">
+
+<h2>
+¿Qué quieres aprender?
+</h2>
+
+<p>
+Elige uno de los temas para conocer más información.
+</p>
+
+</div>
+
+
+<div class="tarjetas">
+
+
+<a href="#sexualidad" class="tarjeta rosa">
+
+<div class="emoji">
+🏳️‍🌈
+</div>
+
+<h3>
+Sexualidad
+</h3>
+
+<p>
+Conoce diferentes orientaciones sexuales,
+identidad de género, diversidad, respeto
+y consentimiento.
+</p>
+
+</a>
+
+
+
+<a href="#salud" class="tarjeta amarillo">
+
+<div class="emoji">
+💗
+</div>
+
+<h3>
+Salud integral
+</h3>
+
+<p>
+Aprende sobre el cuidado de la salud física,
+mental, emocional, social y sexual.
+</p>
+
+</a>
+
+
+
+<a href="#anticonceptivos" class="tarjeta durazno">
+
+<div class="emoji">
+🌼
+</div>
+
+<h3>
+Métodos anticonceptivos
+</h3>
+
+<p>
+Conoce los diferentes tipos de anticonceptivos
+y sus principales características.
+</p>
+
+</a>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+                     SEXUALIDAD
+===================================================== -->
+
+<section id="sexualidad" class="rosa-seccion">
+
+<div class="contenedor">
+
+<div class="titulo">
+
+<h2>
+🏳️‍🌈 Sexualidad
+</h2>
+
+<p>
+
+La sexualidad es una dimensión de la vida humana que
+incluye aspectos como emociones, afectividad,
+relaciones, identidad, orientación y derechos.
+
+</p>
+
+</div>
+
+
+
+<div class="grid">
+
+
+<div class="info">
+
+<div class="icono">
+🌸
+</div>
+
+<h3>
+Heterosexualidad
+</h3>
+
+<p>
+Atracción hacia personas de un género diferente al propio.
+</p>
+
+</div>
+
+
+
+<div class="info">
+
+<div class="icono">
+🏳️‍🌈
+</div>
+
+<h3>
+Homosexualidad
+</h3>
+
+<p>
+Atracción hacia personas del mismo género.
+Puede incluir a hombres gay y mujeres lesbianas.
+</p>
+
+</div>
+
+
+
+<div class="info">
+
+<div class="icono">
+💜
+</div>
+
+<h3>
+Gay
+</h3>
+
+<p>
+Término utilizado generalmente para un hombre
+que siente atracción por otros hombres.
+</p>
+
+</div>
+
+
+
+<div class="info">
+
+<div class="icono">
+🌷
+</div>
+
+<h3>
+Lesbiana
+</h3>
+
+<p>
+Mujer que siente atracción por otras mujeres.
+</p>
+
+</div>
+
+
+
+<div class="info">
+
+<div class="icono">
+💗
+</div>
+
+<h3>
+Bisexualidad
+</h3>
+
+<p>
+Atracción hacia más de un género.
+</p>
+
+</div>
+
+
+
+<div class="info">
+
+<div class="icono">
+🌈
+</div>
+
+<h3>
+Pansexualidad
+</h3>
+
+<p>
+Atracción que puede darse independientemente
+del género de la persona.
+</p>
+
+</div>
+
+
+
+<div class="info">
+
+<div class="icono">
+🌙
+</div>
+
+<h3>
+Asexualidad
+</h3>
+
+<p>
+Orientación en la que una persona experimenta
+poca o ninguna atracción sexual, aunque puede variar.
+</p>
+
+</div>
+
+
+
+<div class="info">
+
+<div class="icono">
+🪞
+</div>
+
+<h3>
+Identidad de género
+</h3>
+
+<p>
+Es la vivencia interna que una persona tiene
+respecto a su género.
+</p>
+
+</div>
+
+
+
+<div class="info">
+
+<div class="icono">
+🎨
+</div>
+
+<h3>
+Expresión de género
+</h3>
+
+<p>
+Es la forma en que una persona expresa su género
+mediante apariencia, comportamiento o estilo.
+</p>
+
+</div>
+
+
+
+<div class="info">
+
+<div class="icono">
+🤝
+</div>
+
+<h3>
+Consentimiento
+</h3>
+
+<p>
+Debe ser libre, informado y respetado.
+Nadie debe ser presionado a hacer algo que no desea.
+</p>
+
+</div>
+
+
+</div>
+
+
+
+<!-- VIDEO SEXUALIDAD -->
+
+<div class="video">
+
+<h3>
+🎥 Video educativo sobre sexualidad
+</h3>
+
+<p>
+Mira el siguiente video para complementar la información.
+</p>
+
+
+<div class="video-card">
+
+<img
+src="https://img.youtube.com/vi/cZYZzr1G2iQ/hqdefault.jpg"
+alt="Video educativo sobre sexualidad"
+>
+
+<a
+href="https://www.youtube.com/watch?v=cZYZzr1G2iQ"
+target="_blank"
+rel="noopener noreferrer"
+>
+
+▶ Ver video en YouTube
+
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+                    SALUD INTEGRAL
+===================================================== -->
+
+<section id="salud">
+
+<div class="contenedor">
+
+<div class="titulo">
+
+<h2>
+💗 Salud integral
+</h2>
+
+<p>
+
+La salud integral considera diferentes dimensiones
+del bienestar y no solamente la ausencia de enfermedades.
+
+</p>
+
+</div>
+
+
+
+<div class="grid">
+
+
+<div class="info">
+
+<div class="icono">
+🧘
+</div>
+
+<h3>
+Salud mental y emocional
+</h3>
+
+<p>
+
+Cuidar nuestras emociones, reconocer lo que sentimos,
+pedir ayuda cuando sea necesario y desarrollar
+relaciones saludables.
+
+</p>
+
+</div>
+
+
+
+<div class="info">
+
+<div class="icono">
+🏃
+</div>
+
+<h3>
+Salud física
+</h3>
+
+<p>
+
+Incluye alimentación adecuada, actividad física,
+descanso, higiene y atención médica.
+
+</p>
+
+</div>
+
+
+
+<div class="info">
+
+<div class="icono">
+🤝
+</div>
+
+<h3>
+Salud social
+</h3>
+
+<p>
+
+Construir relaciones basadas en respeto,
+comunicación, límites y apoyo.
+
+</p>
+
+</div>
+
+
+
+<div class="info">
+
+<div class="icono">
+🌸
+</div>
+
+<h3>
+Salud sexual y reproductiva
+</h3>
+
+<p>
+
+Incluye información, prevención, acceso a servicios
+de salud y toma de decisiones responsables.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+
+<!-- VIDEO SALUD INTEGRAL -->
+
+<div class="video">
+
+<h3>
+🎥 Video sobre salud integral
+</h3>
+
+<p>
+Mira el siguiente video para complementar la información.
+</p>
+
+
+<div class="video-card">
+
+<img
+src="https://img.youtube.com/vi/RmWlqi75a1s/hqdefault.jpg"
+alt="Video educativo sobre salud integral"
+>
+
+<a
+href="https://www.youtube.com/watch?v=RmWlqi75a1s"
+target="_blank"
+rel="noopener noreferrer"
+>
+
+▶ Ver video en YouTube
+
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+                 MÉTODOS ANTICONCEPTIVOS
+===================================================== -->
+
+<section id="anticonceptivos" class="rosa-seccion">
+
+<div class="contenedor">
+
+<div class="titulo">
+
+<h2>
+🌼 Métodos anticonceptivos
+</h2>
+
+<p>
+
+Los métodos anticonceptivos ayudan a prevenir embarazos.
+Algunos métodos de barrera, como los condones,
+también ayudan a reducir el riesgo de infecciones
+de transmisión sexual.
+
+</p>
+
+</div>
+
+
+
+<!-- BARRERA -->
+
+<h3 class="categoria">
+🛡️ Métodos de barrera
+</h3>
+
+
+<div class="grid">
+
+
+<div class="info">
+
+<div class="icono">
+🛡️
+</div>
+
+<h3>
+Condón externo
+</h3>
+
+<p>
+
+Es una barrera que evita que el semen entre en la vagina.
+También ayuda a reducir el riesgo de ITS cuando se usa correctamente.
+
+</p>
+
+</div>
+
+
+
+<div class="info">
+
+<div class="icono">
+🛡️
+</div>
+
+<h3>
+Condón interno
+</h3>
+
+<p>
+
+Barrera que se coloca dentro de la vagina y ayuda
+a prevenir el embarazo y reducir el riesgo de algunas ITS.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+
+<!-- HORMONALES -->
+
+<h3 class="categoria">
+💊 Métodos hormonales
+</h3>
+
+
+<div class="grid">
+
+
+<div class="info">
+
+<div class="icono">
+💊
+</div>
+
+<h3>
+Pastillas anticonceptivas
+</h3>
+
+<p>
+
+Contienen hormonas que ayudan a prevenir la ovulación.
+No protegen contra ITS.
+
+</p>
+
+</div>
+
+
+
+<div class="info">
+
+<div class="icono">
+💉
+</div>
+
+<h3>
+Inyección anticonceptiva
+</h3>
+
+<p>
+
+Libera hormonas durante un periodo determinado.
+No protege contra ITS.
+
+</p>
+
+</div>
+
+
+
+<div class="info">
+
+<div class="icono">
+📌
+</div>
+
+<h3>
+Implante
+</h3>
+
+<p>
+
+Pequeño dispositivo colocado bajo la piel que libera
+hormonas. No protege contra ITS.
+
+</p>
+
+</div>
+
+
+
+<div class="info">
+
+<div class="icono">
+🩹
+</div>
+
+<h3>
+Parche
+</h3>
+
+<p>
+
+Libera hormonas a través de la piel.
+No protege contra ITS.
+
+</p>
+
+</div>
+
+
+
+<div class="info">
+
+<div class="icono">
+⭕
+</div>
+
+<h3>
+Anillo vaginal
+</h3>
+
+<p>
+
+Dispositivo hormonal que se coloca en la vagina.
+No protege contra ITS.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+
+<!-- DIU -->
+
+<h3 class="categoria">
+🌼 Métodos intrauterinos
+</h3>
+
+
+<div class="grid">
+
+
+<div class="info">
+
+<div class="icono">
+🌼
+</div>
+
+<h3>
+DIU de cobre
+</h3>
+
+<p>
+
+Dispositivo colocado en el útero por personal de salud.
+No protege contra ITS.
+
+</p>
+
+</div>
+
+
+
+<div class="info">
+
+<div class="icono">
+🌼
+</div>
+
+<h3>
+DIU hormonal
+</h3>
+
+<p>
+
+Dispositivo intrauterino que libera una hormona.
+No protege contra ITS.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+
+<!-- NATURALES -->
+
+<h3 class="categoria">
+🌿 Métodos basados en la fertilidad
+</h3>
+
+
+<div class="grid">
+
+
+<div class="info">
+
+<div class="icono">
+🌿
+</div>
+
+<h3>
+Conocimiento de la fertilidad
+</h3>
+
+<p>
+
+Consiste en identificar señales del ciclo menstrual
+para reconocer los días fértiles. Su eficacia depende
+del método utilizado y de su aplicación correcta.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+
+<!-- PERMANENTES -->
+
+<h3 class="categoria">
+🔒 Métodos permanentes
+</h3>
+
+
+<div class="grid">
+
+
+<div class="info">
+
+<div class="icono">
+🔒
+</div>
+
+<h3>
+Esterilización
+</h3>
+
+<p>
+
+Procedimiento médico destinado a prevenir embarazos
+de forma permanente. Requiere asesoramiento profesional.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+
+<!-- VIDEO ANTICONCEPTIVOS -->
+
+<div class="video">
+
+<h3>
+🎥 Video sobre métodos anticonceptivos
+</h3>
+
+<p>
+Mira el siguiente video para complementar la información.
+</p>
+
+
+<div class="video-card">
+
+<img
+src="https://img.youtube.com/vi/JhPEJhenNh4/hqdefault.jpg"
+alt="Video sobre métodos anticonceptivos"
+>
+
+<a
+href="https://www.youtube.com/watch?v=JhPEJhenNh4"
+target="_blank"
+rel="noopener noreferrer"
+>
+
+▶ Ver video en YouTube
+
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+                       MITOS
+===================================================== -->
+
+<section id="mitos">
+
+<div class="contenedor">
+
+<div class="titulo">
+
+<h2>
+❓ Mitos y realidades
+</h2>
+
+<p>
+
+Haz clic en cada tarjeta para descubrir la explicación.
+
+</p>
+
+</div>
+
+
+
+<div class="mitos">
+
+
+<button class="mito" onclick="abrirMito(this)">
+
+<strong>
+MITO:
+</strong>
+
+Todos los anticonceptivos protegen contra ITS.
+
+<div class="respuesta">
+
+<strong>
+REALIDAD:
+</strong>
+
+No todos. Los condones ayudan a reducir
+el riesgo de infecciones de transmisión sexual.
+
+</div>
+
+</button>
+
+
+
+<button class="mito" onclick="abrirMito(this)">
+
+<strong>
+MITO:
+</strong>
+
+Hablar de sexualidad fomenta conductas sexuales.
+
+<div class="respuesta">
+
+<strong>
+REALIDAD:
+</strong>
+
+La educación sexual busca proporcionar información
+para tomar decisiones responsables y cuidar la salud.
+
+</div>
+
+</button>
+
+
+
+<button class="mito" onclick="abrirMito(this)">
+
+<strong>
+MITO:
+</strong>
+
+La orientación sexual se elige voluntariamente.
+
+<div class="respuesta">
+
+<strong>
+REALIDAD:
+</strong>
+
+La orientación sexual no se considera una decisión
+voluntaria que una persona simplemente elige.
+
+</div>
+
+</button>
+
+
+
+<button class="mito" onclick="abrirMito(this)">
+
+<strong>
+MITO:
+</strong>
+
+Todos los cuerpos y experiencias son iguales.
+
+<div class="respuesta">
+
+<strong>
+REALIDAD:
+</strong>
+
+Las personas tienen diferentes cuerpos,
+experiencias, necesidades y formas de vivir su identidad.
+
+</div>
+
+</button>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+                      FUENTES
+===================================================== -->
+
+<section id="fuentes" class="fuentes">
+
+<div class="contenedor">
+
+<div class="titulo">
+
+<h2>
+📚 Fuentes confiables
+</h2>
+
+<p>
+
+La información debe complementarse siempre con fuentes
+científicas y profesionales.
+
+</p>
+
+</div>
+
+
+
+<div class="fuente">
+
+<strong>
+🌎 Organización Mundial de la Salud (OMS)
+</strong>
+
+<p>
+
+Información sobre salud, sexualidad y salud reproductiva.
+
+</p>
+
+</div>
+
+
+
+<div class="fuente">
+
+<strong>
+📖 UNESCO
+</strong>
+
+<p>
+
+Educación integral en sexualidad.
+
+</p>
+
+</div>
+
+
+
+<div class="fuente">
+
+<strong>
+🌸 UNFPA
+</strong>
+
+<p>
+
+Salud sexual y reproductiva y derechos.
+
+</p>
+
+</div>
+
+
+
+<div class="fuente">
+
+<strong>
+🏥 Instituciones oficiales de salud
+</strong>
+
+<p>
+
+Para información médica específica se recomienda
+consultar profesionales y organismos sanitarios oficiales.
+
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+                       FOOTER
+===================================================== -->
+
+<footer>
+
+<p>
+🌸 <strong>Conociéndonos</strong> · Educación, respeto y cuidado
+</p>
+
+<p>
+Proyecto educativo
+</p>
+
+</footer>
+
+
+
+<!-- =====================================================
+                    JAVASCRIPT
+===================================================== -->
+
+<script>
+
+function abrirMito(elemento){
+
+    elemento.classList.toggle("abierto");
+
+}
+
+</script>
+
+
+</body>
+</html>
